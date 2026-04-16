@@ -19,7 +19,7 @@ pipeline{
         stage("build"){
             steps{
                 echo "this is building stage"
-                sh "docker compose down && docker compose up -d"
+                sh "docker compose up -d"
             }
         }
         stage("pushToDocker"){
